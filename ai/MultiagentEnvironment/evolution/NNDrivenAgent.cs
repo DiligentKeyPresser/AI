@@ -175,16 +175,9 @@ namespace MultiagentEnvironment
             return nnInputs;
         }
 
-        protected bool inSight(IAbstractAgent agent)
-        {
-            double crossProduct = cosTeta(Rx, Ry, agent.X - X, agent.Y - Y);
-            return (crossProduct > 0);
-        }
-
-        protected double distanceTo(IAbstractAgent agent)
-        {
-            return module(agent.X - X, agent.Y - Y);
-        }
+        protected bool inSight(IAbstractAgent agent) => cosTeta(Rx, Ry, agent.X - X, agent.Y - Y) > 0;
+        
+        protected double distanceTo(IAbstractAgent agent) => module(agent.X - X, agent.Y - Y);
 
         protected double cosTeta(double vx1, double vy1, double vx2, double vy2)
         {
