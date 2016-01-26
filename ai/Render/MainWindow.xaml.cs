@@ -240,6 +240,11 @@ namespace Render
         {
             Evolve(10);
         }
+
+        private void MenuItem100_Click(object sender, RoutedEventArgs e)
+        {
+            Evolve(100);
+        }
     }
 
     public abstract class AgentPresenter : Control

@@ -59,6 +59,7 @@
             </MenuItem>
             <MenuItem Header="Evolve">
                 <MenuItem Header="10" Click="MenuItem10_Click"/>
+                <MenuItem Header="100" Click="MenuItem100_Click"/>
             </MenuItem>
         </Menu>
 
